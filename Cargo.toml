@@ -2,6 +2,7 @@
 members = [
     "atrium-api",
     "atrium-cli",
+    "atrium-repo",
     "atrium-xrpc",
     "atrium-xrpc-client",
 ]
@@ -25,6 +26,9 @@ atrium-api = { version = "0.21.2", path = "atrium-api" }
 atrium-xrpc = { version = "0.10.6", path = "atrium-xrpc" }
 atrium-xrpc-client = { version = "0.5.2", path = "atrium-xrpc-client" }
 
+# async in streams
+async-stream = "0.3"
+
 # async in traits
 # Can be removed once MSRV is at least 1.75.0.
 async-trait = "0.1.68"
@@ -41,11 +45,13 @@ serde = "1.0.160"
 serde_bytes = "0.11.9"
 serde_json = "1.0.96"
 serde_html_form = "0.2.6"
+unsigned-varint = "0.8"
 
 # Networking
 futures = { version = "0.3.30", default-features = false, features = ["alloc"] }
 http = "1.1.0"
 tokio = { version = "1.36", default-features = false }
+tokio-util = "0.7"
 
 # HTTP client integrations
 isahc = "1.7.2"
