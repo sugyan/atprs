@@ -10,12 +10,15 @@ members = [
     "atrium-oauth/oauth-client",
     "bsky-cli",
     "bsky-sdk",
+
+    # "examples/concurrent",
+    "examples/firehose",
 ]
 # Examples show how to use the latest published crates, not the workspace state.
 exclude = [
-    "examples/concurrent",
-    "examples/firehose",
-    "examples/video",
+    # "examples/concurrent",
+    # "examples/firehose",
+    # "examples/video",
 ]
 resolver = "2"
 
